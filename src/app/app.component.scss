@@ -230,7 +230,11 @@
     height: 1rem;
     padding: 0.5rem 1.5rem;
     margin-right: 1rem;
+    fill: #000;
     cursor: pointer;
+    &-dark {
+      fill: #FFF;
+    }
   }
   
   .logo__icon {
@@ -293,7 +297,10 @@
   
   .copyright__text {
     letter-spacing: 0.1rem;
-    color: white;
+    color: #000;
+    &-dark {
+      color: #FFF;
+    }
   }
   
   @media only screen and (max-width: 300px) {

@@ -8,12 +8,20 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Minimus';
   showMenu = false;
+  darkModeActive = false;
 
-  public toggleMenu() {
+  private toggleMenu() {
     if (this.showMenu === true) {
       this.showMenu = false;
     } else {
       this.showMenu = true;
+    };
+  }
+  private modeToggleSwitch() {
+    if (this.darkModeActive === true) {
+      this.darkModeActive = false;
+    } else {
+      this.darkModeActive = true;
     };
   }
 }
